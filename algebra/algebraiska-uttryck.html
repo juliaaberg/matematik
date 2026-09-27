@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lär dig algebraiska uttryck med exempel och interaktiva övningar.">
+  <title>Algebraiska uttryck | Matematik</title>
+  <link rel="stylesheet" href="../css/bok.css">
+  <script defer src="../js/algebraiska-uttryck.js"></script>
+  <script>window.MathJax = {tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]}, svg: {fontCache: 'global'}};</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Matematik, startsidan">mate<span>matik</span><b>.</b></a>
+      <nav aria-label="Huvudmeny"><a href="../index.html">Hem</a><a href="../matematik-1a/">Matematik 1a</a></nav>
+    </div>
+  </header>
+  <main class="container page">
+    <nav class="breadcrumbs" aria-label="Brödsmulor"><a href="../index.html">Hem</a> <span>›</span> <a href="../matematik-1a/">Matematik 1a</a> <span>›</span> Algebraiska uttryck</nav>
+    <div class="layout">
+      <aside class="contents" aria-label="Innehållsförteckning">
+        <p class="eyebrow">LÄR DIG · ALGEBRA</p>
+        <strong>I det här kapitlet</strong>
+        <a href="#uttryck">1. Vad är ett uttryck?</a>
+        <a href="#delar">2. Uttryckets delar</a>
+        <a href="#varde">3. Beräkna värdet</a>
+        <a href="#utforska">4. Utforska själv</a>
+        <a href="#testa">5. Testa dig själv</a>
+      </aside>
+      <article class="lesson">
+        <p class="eyebrow">MATEMATIK 1A · ALGEBRA</p>
+        <h1>Algebraiska uttryck</h1>
+        <p class="lead">Med bokstäver kan vi beskriva matematiska samband, även när vi ännu inte vet vilka talen är.</p>
+        <section id="uttryck">
+          <h2>1. Vad är ett algebraiskt uttryck?</h2>
+          <p>Ett <strong>algebraiskt uttryck</strong> består av tal, variabler och räkneoperationer. En variabel är en bokstav som representerar ett tal.</p>
+          <div class="example"><p class="box-label">EXEMPEL</p><p>En biobiljett kostar 120 kr. Om du köper \(x\) biljetter blir kostnaden</p><div class="math">\[120x\]</div><p>Om du dessutom betalar 30 kr i bokningsavgift blir uttrycket</p><div class="math">\[120x+30\]</div><p>Uttrycket beskriver den totala kostnaden i kronor.</p></div>
+          <div class="note"><strong>Kom ihåg!</strong> \(120x\) betyder \(120\cdot x\). Multiplikationstecknet skrivs oftast inte ut mellan ett tal och en variabel.</div>
+        </section>
+        <section id="delar">
+          <h2>2. Uttryckets delar</h2>
+          <p>Vi undersöker uttrycket \(3x+5\).</p>
+          <div class="term-card" aria-label="Uttrycket tre x plus fem. Tre är koefficient, x är variabel och fem är konstantterm.">
+            <div class="expression"><span class="coefficient">3</span><span class="variable">x</span> + <span class="constant">5</span></div>
+            <div class="term-legend"><span><i class="dot coefficient-dot"></i><strong>Koefficient:</strong> 3</span><span><i class="dot variable-dot"></i><strong>Variabel:</strong> x</span><span><i class="dot constant-dot"></i><strong>Konstantterm:</strong> 5</span></div>
+          </div>
+          <p><strong>Koefficienten</strong> är talet som multipliceras med variabeln. <strong>Konstanttermen</strong> är den term som inte innehåller någon variabel.</p>
+        </section>
+        <section id="varde">
+          <h2>3. Beräkna värdet av ett uttryck</h2>
+          <p>När vi vet variabelns värde kan vi ersätta bokstaven med talet och beräkna uttryckets värde.</p>
+          <div class="example"><p class="box-label">LÖST EXEMPEL</p><p>Beräkna \(3x+5\) när \(x=4\).</p><div class="steps"><div>\(3x+5\)</div><div>\(=3\cdot4+5\)</div><div>\(=12+5\)</div><div>\(=17\)</div></div><p><strong>Svar:</strong> Uttryckets värde är 17.</p></div>
+        </section>
+        <section id="utforska">
+          <h2>4. Utforska själv</h2>
+          <p>Flytta reglaget och undersök hur uttryckets värde förändras.</p>
+          <div class="interactive"><p class="box-label">INTERAKTIV ÖVNING</p><div class="math">\[3x+5\]</div><label for="x-slider">Välj ett värde på \(x\): <output id="x-value" for="x-slider">4</output></label><input id="x-slider" type="range" min="-5" max="10" step="1" value="4"><div class="result" aria-live="polite"><span>Uttryckets värde</span><strong id="result-value">17</strong><span id="calculation">3 · 4 + 5 = 17</span></div><p class="prompt">Fundera: Vad händer med uttryckets värde när \(x\) ökar med 1?</p><details><summary>Visa förklaring</summary><p>Uttryckets värde ökar med 3, eftersom koefficienten framför \(x\) är 3.</p></details></div>
+        </section>
+        <section id="testa">
+          <h2>5. Testa dig själv</h2>
+          <p>Svara på frågorna. Du får återkoppling direkt.</p>
+          <form id="quiz" class="quiz" novalidate>
+            <div class="question"><label for="q1"><strong>Fråga 1.</strong> Vad är koefficienten i \(7x+2\)?</label><input id="q1" name="q1" type="number" inputmode="numeric" required><p class="feedback" id="f1" aria-live="polite"></p></div>
+            <div class="question"><label for="q2"><strong>Fråga 2.</strong> Beräkna \(2x+6\) när \(x=5\).</label><input id="q2" name="q2" type="number" inputmode="numeric" required><p class="feedback" id="f2" aria-live="polite"></p></div>
+            <div class="question"><label for="q3"><strong>Fråga 3.</strong> Ett paket kostar 40 kr. Skriv den totala kostnaden för \(x\) paket och 15 kr i frakt. Skriv utan mellanslag.</label><input id="q3" name="q3" type="text" autocomplete="off" required placeholder="Exempel: 2x+3"><p class="feedback" id="f3" aria-live="polite"></p></div>
+            <button type="submit">Rätta mina svar</button><p class="score" id="score" role="status"></p>
+          </form>
+        </section>
+        <div class="next"><a href="../matematik-1a/">← Tillbaka till Matematik 1a</a><span>Fler kapitel kommer snart</span></div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer">Matematik · Genomgångar och övningar för gymnasiet</footer>
+</body>
+</html>
