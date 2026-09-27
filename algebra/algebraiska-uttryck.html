@@ -49,17 +49,31 @@
         <section id="varde">
           <h2>2. Beräkna värdet av ett uttryck</h2>
           <p>När vi vet variabelns värde kan vi ersätta bokstaven med talet och beräkna uttryckets värde.</p>
-          <div class="example"><p class="box-label">LÖST EXEMPEL</p><p>Beräkna \(3x+5\) när \(x=4\).</p><div class="steps"><div>\(3x+5\)</div><div>\(=3\cdot4+5\)</div><div>\(=12+5\)</div><div>\(=17\)</div></div><p><strong>Svar:</strong> Uttryckets värde är 17.</p></div>
+          <div class="example"><p class="box-label">LÖST EXEMPEL</p>
+            <p>Beräkna \(3x+5\) när \(x=4\).</p><div class="steps"><div>\(3x+5\)</div>
+              <div>\(=3\cdot4+5\)</div><div>\(=12+5\)</div><div>\(=17\)</div></div><p>
+                <strong>Svar:</strong> Uttryckets värde är 17.</p></div>
+          <p>Flytta reglaget och undersök hur uttryckets värde förändras.</p>
+          <div class="interactive"><p class="box-label">INTERAKTIV ÖVNING</p><div class="math">\[3x+5\]</div>
+            <label for="x-slider">Välj ett värde på \(x\): <output id="x-value" for="x-slider">4</output></label>
+            <input id="x-slider" type="range" min="-5" max="10" step="1" value="4">
+            <div class="result" aria-live="polite">
+              <span>Uttryckets värde</span><strong id="result-value">17</strong>
+              <span id="calculation">3 · 4 + 5 = 17</span></div>
+            <p class="prompt">Fundera: Vad händer med uttryckets värde när \(x\) ökar med 1?</p>
+            <details><summary>Visa förklaring</summary><p>Uttryckets värde ökar med 3, eftersom koefficienten framför \(x\) är 3.</p></details></div>
         </section>
         <section id="forenkla">
           <h2>3. Förenkla uttryck</h2>
-          
+          <p>En uttryck kan förenklas (skrivas) på ett kortare sätt genom att vi samlar liknande termer.</p>
+           <div class="example"><p class="box-label">EXEMPEL</p>
+             <p>Förenkla uttrycket\[8x+4+2x-5\]</p>
+             <div class="math">\[=10x-1\]</div></div>
         </section>
         
         <section id="utforska">
           <h2>4. Utforska själv</h2>
-          <p>Flytta reglaget och undersök hur uttryckets värde förändras.</p>
-          <div class="interactive"><p class="box-label">INTERAKTIV ÖVNING</p><div class="math">\[3x+5\]</div><label for="x-slider">Välj ett värde på \(x\): <output id="x-value" for="x-slider">4</output></label><input id="x-slider" type="range" min="-5" max="10" step="1" value="4"><div class="result" aria-live="polite"><span>Uttryckets värde</span><strong id="result-value">17</strong><span id="calculation">3 · 4 + 5 = 17</span></div><p class="prompt">Fundera: Vad händer med uttryckets värde när \(x\) ökar med 1?</p><details><summary>Visa förklaring</summary><p>Uttryckets värde ökar med 3, eftersom koefficienten framför \(x\) är 3.</p></details></div>
+          
         </section>
         <section id="testa">
           <h2>5. Testa dig själv</h2>
